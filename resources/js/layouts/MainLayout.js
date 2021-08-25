@@ -55,19 +55,19 @@ export default function MainLayout(){
               </div>
               <ul className="header-menu nav">
                 <li className="nav-item">
-                  <a href="javascript:void(0);" className="nav-link">
+                  <a href="#" className="nav-link">
                     <i className="nav-link-icon fa fa-database"> </i>
                     Statistics
                   </a>
                 </li>
                 <li className="btn-group nav-item">
-                  <a href="javascript:void(0);" className="nav-link">
+                  <a href="#" className="nav-link">
                     <i className="nav-link-icon fa fa-edit" />
                     Projects
                   </a>
                 </li>
                 <li className="dropdown nav-item">
-                  <a href="javascript:void(0);" className="nav-link">
+                  <a href="#" className="nav-link">
                     <i className="nav-link-icon fa fa-cog" />
                     Settings
                   </a>
@@ -450,12 +450,12 @@ export default function MainLayout(){
                   <div className="app-footer-left">
                     <ul className="nav">
                       <li className="nav-item">
-                        <a href="javascript:void(0);" className="nav-link">
+                        <a href="#" className="nav-link">
                           Footer Link 1
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="javascript:void(0);" className="nav-link">
+                        <a href="#" className="nav-link">
                           Footer Link 2
                         </a>
                       </li>
@@ -464,12 +464,12 @@ export default function MainLayout(){
                   <div className="app-footer-right">
                     <ul className="nav">
                       <li className="nav-item">
-                        <a href="javascript:void(0);" className="nav-link">
+                        <a href="#" className="nav-link">
                           Footer Link 3
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="javascript:void(0);" className="nav-link">
+                        <a href="#" className="nav-link">
                           <div className="badge badge-success mr-1 ml-0">
                             <small>NEW</small>
                           </div>
