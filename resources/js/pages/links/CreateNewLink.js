@@ -10,7 +10,8 @@ export default function CreateNewLink(){
     const [productData, setProductData] = useState(false);
 
     function HandleResourcePicker(resource){
-      setProductData(resource.selection[0]);
+      console.log(resource);
+      //setProductData(resource.selection[0]);
   }
   return(
           <>

@@ -431,6 +431,7 @@ export default function MainLayout(){
             {/* Begin app-main__inner */}
             <div className="app-main__inner">
             <Switch>
+
               <Route path="/app/links/new">
                   <CreateNewLink />
               </Route>
@@ -440,6 +441,16 @@ export default function MainLayout(){
               <Route path="/app">
                   <HomePage />
               </Route>
+
+
+              
+              <Route path="/projects/create">
+                  Create project
+              </Route>
+              <Route path="/projects">
+                  All projects
+              </Route>
+
             </Switch>
             </div>
             {/* END app-main__inner */}

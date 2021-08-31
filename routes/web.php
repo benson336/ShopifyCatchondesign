@@ -16,15 +16,18 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', 'DashboardController@index')->middleware(['verify.shopify'])
 ->name('home');*/
 
-Route::get('/{path}', 'DashboardController@index')->middleware(['verify.shopify'])
-->where('path', '.*');
-
-
 /*Route::get('/app/{path}',[
     'uses' => 'DashboardController@index',
     'as' => 'home',
     'where' => ['path' => '.*']
 ])->middleware(['verify.shopify']);*/
 
+/*Route::get('/{path}', 'DashboardController@index')->middleware(['verify.shopify'])
+->where('path', '.*');*/
 
+Route::get('/app', 'DashboardController@index')->middleware(['verify.shopify']);
+Route::get('/app/links/all', 'DashboardController@index')->middleware(['verify.shopify']);
+Route::get('/app/links/new', 'DashboardController@index')->middleware(['verify.shopify']);
 
+Route::get('/projects', 'ProjectController@index')->middleware(['verify.shopify']);
+Route::get('/projects/create', 'ProjectController@index')->middleware(['verify.shopify']);
