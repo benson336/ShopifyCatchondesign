@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {TitleBar, useRoutePropagation, ResourcePicker} from '@shopify/app-bridge-react';
 import {useLocation} from 'react-router-dom';
+import axios from 'axios';
 
 export default function CreateNewLink(){
   let location = useLocation();
@@ -10,9 +11,22 @@ export default function CreateNewLink(){
     const [productData, setProductData] = useState(false);
 
     function HandleResourcePicker(resource){
-      console.log(resource);
-      //setProductData(resource.selection[0]);
-  }
+      //console.log(resource.selection[0].id);
+      setProductData(resource.selection[0]);
+
+      axios.get('/app/graphql')
+      .then(function (response) {
+      // handle success
+      console.log('response from server successful!');
+      })
+      .catch(function (error) {
+      // handle error
+      console.log(error);
+      })
+      .then(function () {
+      // always executed
+      });
+      }
   return(
           <>
             <TitleBar title="Create New Link" />
